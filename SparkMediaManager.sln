@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkMediaManager", "SparkMediaManager\SparkMediaManager.csproj", "{85F5DAD4-42DC-4854-9FD8-4A9EFE7E5155}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{216F1EC9-4848-49BD-A895-5B45E2A3F272}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{97B5F81C-210D-4293-8D67-3483DB023FFF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{EE00F324-F3E7-4E70-AB8F-8C4EE7367358}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\SparkMediaManager.json = PublishScripts\Templates\SparkMediaManager.json
+		PublishScripts\Templates\SparkMediaManager.param.dev.json = PublishScripts\Templates\SparkMediaManager.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97B5F81C-210D-4293-8D67-3483DB023FFF} = {216F1EC9-4848-49BD-A895-5B45E2A3F272}
+		{EE00F324-F3E7-4E70-AB8F-8C4EE7367358} = {216F1EC9-4848-49BD-A895-5B45E2A3F272}
 	EndGlobalSection
 EndGlobal
